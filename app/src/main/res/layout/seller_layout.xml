@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:id="@+id/sellerLayout">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/rowUserName"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvUserNameHeader"
+                android:layout_width="match_parent"
+                android:text="User Name"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:maxLines="100" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFeedbackScore"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvFeedbackScoreHeader"
+                android:layout_width="match_parent"
+                android:text="Feedback Score"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvFeedbackScore"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:maxLines="100" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowPositiveFeedback"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvPositiveFeedbackHeader"
+                android:layout_width="match_parent"
+                android:text="Positive Feedback"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvPositiveFeedback"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:maxLines="100" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowFeedbackRating"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvFeedbackRatingHeader"
+                android:layout_width="match_parent"
+                android:text="Feedback Rating"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvFeedbackRating"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:maxLines="100" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowTopRated"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvTopRatedHeader"
+                android:layout_width="match_parent"
+                android:text="Top Rated"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/ivSellerTopRated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowStore"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvStoreHeader"
+                android:layout_width="match_parent"
+                android:text="Store"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvStore"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:singleLine="false"
+                android:maxLines="100" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:id="@+id/basicInfoLayout">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+     <TableRow
+        android:id="@+id/rowConditionName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:weightSum="2"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tvCategoryNameHeader"
+            android:layout_width="match_parent"
+            android:text="Category Name"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+         <TextView
+             android:id="@+id/tvCategoryName"
+             android:layout_width="match_parent"
+             android:text="Column 1"
+             android:layout_weight="1"
+             android:textAllCaps="false" />
+     </TableRow>
+
+        <TableRow
+            android:id="@+id/rowCondition"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvConditionHeader"
+                android:layout_width="match_parent"
+                android:text="Condition"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvCondition"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowBuyingFormat"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tvBuyingFormatHeader"
+                android:layout_width="match_parent"
+                android:text="Buying Format"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvBuyingFormat"
+                android:layout_width="match_parent"
+                android:text="Column 1"
+                android:layout_weight="1"
+                android:textAllCaps="false" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

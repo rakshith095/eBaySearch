@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Homework9</string>
+    <string name="formSearchHeading">eBay Search</string>
+    <string name="ebaySearch">ebaySearch</string>
+    <string name="resultActivity">ResultActivity</string>
+    <string name="detailsActivity">DetailsActivity</string>
+    <string name="tvKeyword">Keyword</string>
+    <string name="tvPriceFrom">Price From</string>
+    <string name="tvPriceTo">Price To</string>
+    <string name="tvSortBy">Sort By</string>
+    <string name="btClear">CLEAR</string>
+    <string name="btSearch">SEARCH</string>
+    <string name="btnBuyNow">Buy Now</string>
+    <string name="APP_ID">391882874353327</string>
+
+    <string name="action_settings">Settings</string>
+11</resources>

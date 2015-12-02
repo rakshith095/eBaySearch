@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+          <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+             android:layout_width="200dp"
+             android:layout_height="175dp"
+             android:id="@+id/galleryImageView"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true" />
+
+           <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="TEXTTEXT"
+             android:id="@+id/tvDetailsTitle"
+             android:layout_below="@+id/galleryImageView"
+             android:textSize="14dp"
+             android:textColor="@android:color/black"
+             android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true" />
+
+           <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="TEXTTEXT"
+             android:id="@+id/tvDetailsPrice"
+             android:textSize="13dp"
+             android:layout_below="@+id/tvDetailsTitle"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true" />
+
+           <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="TEXTTEXT"
+             android:id="@+id/tvLocations"
+             android:textSize="13dp"
+             android:layout_below="@+id/tvDetailsPrice"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true" />
+
+           <ImageView
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:id="@+id/ivTopRated"
+             android:src="@drawable/item_top_rated"
+             android:visibility="invisible"
+             android:layout_above="@+id/basicInfoButton"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true" />
+
+           <Button
+             android:layout_width="wrap_content"
+             android:layout_height="38dp"
+             android:id="@+id/buyNowButton"
+             android:text="@string/btnBuyNow"
+             android:textAllCaps="false"
+             android:background="@drawable/btn_blue"
+             style="@style/ButtonText"
+             android:layout_below="@+id/tvLocations"
+             android:layout_centerHorizontal="true" />
+
+           <ImageView
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:id="@+id/fbButton"
+             android:src="@drawable/fb"
+               android:clickable="true"
+               android:onClick="fbPost"
+             android:layout_alignBottom="@+id/buyNowButton"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true" />
+
+           <Button
+              android:id="@+id/basicInfoButton"
+              android:layout_width="110dp"
+              android:layout_height="37dp"
+              android:text="Basic Info"
+              android:layout_marginTop="15dp"
+              android:layout_below="@+id/buyNowButton"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true" />
+
+           <Button
+              android:id="@+id/sellerButton"
+              android:layout_width="110dp"
+              android:layout_height="37dp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="15dp"
+              android:layout_below="@+id/buyNowButton"
+              android:text="Seller"/>
+
+           <Button
+              android:id="@+id/shippingButton"
+              android:layout_width="110dp"
+              android:layout_height="37dp"
+              android:text="Shipping"
+              android:layout_marginTop="15dp"
+              android:layout_below="@+id/buyNowButton"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true" />
+
+              <RelativeLayout
+                  android:id="@+id/detailsRelativeLayout"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_below="@+id/sellerButton">
+                  </RelativeLayout>
+
+          </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+</RelativeLayout>

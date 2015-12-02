@@ -1,0 +1,176 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_image"
+    tools:context=".EbaySearch">
+
+    <TextView
+        android:id="@+id/formSearchHeading"
+        android:text="@string/formSearchHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20pt"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#0000ff" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/formSearchHeading"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+           android:id="@+id/tableRow1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="2dp">
+
+           <TextView
+              android:id="@+id/tvKeyword"
+              android:layout_width="90dp"
+              android:layout_height="wrap_content"
+              android:text="@string/tvKeyword"
+               android:textSize="15dp" />
+
+           <EditText
+             android:id="@+id/etKeyword"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+               android:ems="10"
+             android:inputType="text">
+             <requestFocus />
+           </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/tvpriceFrom"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPriceFrom"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etPriceFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/tvPriceTo"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPriceTo"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etPriceTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+
+            <TextView
+                android:id="@+id/tvSortBy"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tvSortBy"
+                android:textSize="15dp"
+                android:layout_marginTop="2dp" />
+
+            <Spinner
+                android:id="@+id/spSortBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btClear"
+        android:id="@+id/btClear"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignLeft="@+id/formSearchHeading"
+        android:layout_alignStart="@+id/formSearchHeading"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btSearch"
+        android:id="@+id/btSearch"
+        android:layout_alignTop="@+id/btClear"
+        android:layout_toRightOf="@+id/btClear"
+        android:layout_toEndOf="@+id/btClear" />
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff0000"
+        android:layout_below="@+id/btClear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/tvResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff0000"
+        android:layout_below="@+id/tvResult1"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tvResult3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff0000"
+        android:layout_below="@+id/tvResult2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tvResult4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff0000"
+        android:layout_below="@+id/tvResult3"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
